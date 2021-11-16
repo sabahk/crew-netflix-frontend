@@ -1,0 +1,12 @@
+<div class="row" *ngFor="let item of content | keyvalue">
+  <h1>{{item.key}}</h1>
+  <div class="rowItem">
+    <div *ngFor="let row of item.value">
+      <img [src]="row.backdropURLs.original" [alt]="row.originalTitle">
+      <div class="rowHover">
+        <h2>{{row.originalTitle}}</h2>
+        <p>{{row.overview}}</p>
+      </div>
+    </div>
+  </div>
+</div>

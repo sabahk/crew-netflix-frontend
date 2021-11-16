@@ -1,0 +1,11 @@
+{
+
+    "/api": {
+      "target": "https://crew-netflix-backend.herokuapp.com",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }
