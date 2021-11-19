@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesComponent implements OnInit {
 
+  genresParam;
+  movies;
   constructor() { }
 
   ngOnInit(): void {
